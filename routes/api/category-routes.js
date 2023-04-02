@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
   })
   // be sure to include its associated Products
   .then((categories) => res.json(categories))
-  .catch((err) => res.status.(500).json(err));
+  .catch((err) => res.status(500).json(err));
 });
 
 router.get('/:id', (req, res) => {
@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
   })
   // be sure to include its associated Products
   .then((category) => res.json(category))
-  .catch((err) => res.status.(400).json(err));
+  .catch((err) => res.status(400).json(err));
 });
 
 router.post('/', (req, res) => {
@@ -35,7 +35,7 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
-  Category.update(req, body {
+  Category.update(req, body, {
     where: {
       id: req.params.id,
     },
@@ -46,7 +46,7 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete a category by its `id` value
-  Category.delete(req,body {
+  Category.delete(req,body, {
     where: {
       id: req.params.id,
     },

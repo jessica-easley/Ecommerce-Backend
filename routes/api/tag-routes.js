@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     include: [Product],
   })
   .then((tags) => res.json(tags))
-  .catch((err) => res.status.(500).json(err));
+  .catch((err) => res.status(500).json(err));
 });
 
 router.get('/:id', (req, res) => {
@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
   })
   // be sure to include its associated Product data
   .then((tag) => res.json(tag))
-  .catch((err) => res.status.(400).json(err));
+  .catch((err) => res.status(400).json(err));
 });
 
 router.post('/', (req, res) => {
@@ -35,7 +35,7 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
-  Tag.update(req, body {
+  Tag.update(req, body, {
     where: {
       id: req.params.id,
     },
@@ -46,7 +46,7 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete on tag by its `id` value
-  Tag.delete(req, body {
+  Tag.delete(req, body, {
     where: {
       id: req.params.id,
     },
