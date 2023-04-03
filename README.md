@@ -31,8 +31,11 @@ THEN I am able to successfully create, update, and delete data in my database
 
 # Application Screenshots
 
+* Categories
 ![Categories](./assets/Categories.png)
 
+* Products
 ![Products](./assets/Products.png)
 
+* Tags
 ![Tags](./assets/Tags.png)
