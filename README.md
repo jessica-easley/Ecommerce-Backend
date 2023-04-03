@@ -3,7 +3,7 @@
 # Description
 This application is the back end for an e-commerce site. This application takes a working Express.js API and configure it and uses Sequelize to interact with a MySQL database.
 
-# View Demo Video Here:
+# View Demo Video Here: https://watch.screencastify.com/v/rjWfhEjTZgmOC8wytu8O
 
 # User Story
 AS A manager at an internet retail company
@@ -30,3 +30,9 @@ THEN I am able to successfully create, update, and delete data in my database
 * Insomnia
 
 # Application Screenshots
+
+![Categories](./assets/Categories.png)
+
+![Products](./assets/Products.png)
+
+![Tags](./assets/Tags.png)
